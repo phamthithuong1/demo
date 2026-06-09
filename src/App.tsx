@@ -12,6 +12,7 @@ import {
   X,
   Info
 } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 import { CATEGORIES, PRODUCTS, fetchProductsFromSheet } from "./productsData";
 import { Product } from "./types";
 import Header from "./components/Header";
@@ -360,6 +361,9 @@ export default function App() {
         isFavorited={selectedProduct ? favorites.includes(selectedProduct.id) : false}
         onToggleFavorite={handleToggleFavorite}
       />
+      
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
