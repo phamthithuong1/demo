@@ -1,0 +1,6 @@
+{
+  "name": "Milan Kids",
+  "description": "Website Landing Page kết hợp Catalog chia sẻ các sản phẩm chính hãng Shopee với mã giảm giá và deal hot cập nhật hàng ngày.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
