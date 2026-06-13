@@ -36,6 +36,8 @@ export default function App() {
   const [sortBy, setSortBy] = useState<string>("default");
   const [showNotification, setShowNotification] = useState<boolean>(true);
 
+
+
   // Load Google Sheets data automatically on mount
   const handleSyncFromSheet = async () => {
     setIsSyncing(true);
@@ -61,6 +63,8 @@ export default function App() {
   useEffect(() => {
     handleSyncFromSheet();
   }, []);
+
+
 
   // Load favorites from local storage on first mount
   useEffect(() => {
@@ -164,7 +168,7 @@ export default function App() {
 
       {/* Hero Visual Section */}
       <HeroSection
-        onCtaClick={() => window.open("https://s.shopee.vn/2g8c80NsQP", "_blank", "noopener,noreferrer")}
+        onCtaClick={() => window.open("https://s.shopee.vn/2LVtEKovrS", "_blank", "noopener,noreferrer")}
         productsCount={products.length}
       />
 
@@ -360,6 +364,8 @@ export default function App() {
         isFavorited={selectedProduct ? favorites.includes(selectedProduct.id) : false}
         onToggleFavorite={handleToggleFavorite}
       />
+
+
     </div>
   );
 }
